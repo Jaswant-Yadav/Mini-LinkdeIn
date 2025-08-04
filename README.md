@@ -4,9 +4,9 @@ A mini full-stack LinkedIn-like community web application that allows users to r
 
 🌍 Deployment
 
-Frontend: 
+Frontend: https://mini-linked-in-flax.vercel.app/
 
-Backend: 
+Backend: https://back-linkedin.onrender.com
 
 ## Features
 
@@ -115,5 +115,5 @@ Notes
 
     Ensure the uploads/ folder exists in the back-end/ directory for image uploads.
 
-    Posts with images are served from: http://localhost:5000/uploads/<filename>
+
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import API from "../api";
 
 const Login = () => {
@@ -23,6 +23,7 @@ const Login = () => {
 
   return (
     <div className="login">
+      
       <form onSubmit={handleSubmit} className="login-form">
         <h2>Login</h2><br />
         <input name="email" onChange={handleChange} placeholder="Email" className="input" />
@@ -31,7 +32,8 @@ const Login = () => {
         <br />
         <button className="btn">Login</button>
         <br /><br />
-        <a href="/register">Don't have a account? Register</a>
+
+        <Link to="/register">Don't have a account? Register</Link>
       </form>
     </div>
   );

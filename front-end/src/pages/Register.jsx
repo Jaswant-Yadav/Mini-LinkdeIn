@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import API from "../api";
 
 const Register = () => {
@@ -13,6 +13,7 @@ const Register = () => {
     e.preventDefault();
     try {
       await API.post("/auth/register", form);
+      alert("Register Sucessfully...")
       navigate("/login");
     } catch (err) {
       alert(err.response?.data?.error || "Registration failed");
@@ -31,7 +32,7 @@ const Register = () => {
         <br />
         <button className="btn">Register</button>
         <br /><br />
-        <a href="/login">Already have a account? Login</a>
+        <Link to="/login">Already have a account? Login</Link>
       </form>
     </div>
   );

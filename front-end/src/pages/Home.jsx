@@ -92,7 +92,7 @@ const Home = () => {
 
             {post.image && (
               <img
-                src={`http://localhost:5000/${post.image}`}
+                src={`https://back-linkedin.onrender.com/${post.image}`}
                 alt="post"
                 className="post-img"
               />
